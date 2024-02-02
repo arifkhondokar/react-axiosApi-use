@@ -1,0 +1,44 @@
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a{
+    text-decoration: none;
+  }
+  h1,h2,h3,h4,h5,h6,p{
+    line-height: 145%;
+  }
+  ul,ol{
+    list-style-type: none;
+  }
+  body{
+    width: 1200px;
+    margin: 0 auto;
+  }
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.userId{
+  background-color: rgba(0, 0, 0, 0.563);
+  color: blanchedalmond;
+  padding: 10px;
+  width: 270px;
+  gap: 30px;
+}
+h3{
+  font-size: 30px;
+}
+h4{
+  font-style: italic;
+  font-size: 22px;
+}
+p{
+  font-size: 25px;
+}
+img{
+  width: 300px;
+  height: 350px;
+}
