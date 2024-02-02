@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Axios = () => {
 
-    let [user, setUser] = useState()
+    let [user, setUser] = useState([])
     const [ isError, setIsError] = useState("")
 
 // using Assync Await---------------    
@@ -17,7 +17,6 @@ const Axios = () => {
         setIsError (error.message);
       }  
     }
-    
     useEffect(()=>{
       getMyData()
     },[])
@@ -25,6 +24,10 @@ const Axios = () => {
   return (
     <>
     <div className="main">
+    {
+      isError !== "" && <h2>{isError}</h2>
+    }
+
     {user && user.length > 0
     ?
     user.slice(0,8).map((userId,index)=>(
