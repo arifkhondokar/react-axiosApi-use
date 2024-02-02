@@ -42,3 +42,11 @@ img{
   width: 300px;
   height: 350px;
 }
+/* ---------------- */
+.mydata {
+  background-color: rgba(188, 182, 182, 0.563);
+  color: #000;
+  padding: 20px 55px;
+  width: 100%;
+  gap: 30px;
+}

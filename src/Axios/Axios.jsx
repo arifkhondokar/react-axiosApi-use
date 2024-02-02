@@ -5,14 +5,21 @@ import axios from 'axios';
 const Axios = () => {
 
     let [user, setUser] = useState()
+    const [ isError, setIsError] = useState("")
 
+// using Assync Await---------------    
+    
+    let getMyData = async ()=>{
+      try {
+        let response = await axios.get("https://jsonplaceholder.typicode.com/posts")
+        setUser(response.data);
+      } catch (error) {
+        setIsError (error.message);
+      }  
+    }
+    
     useEffect(()=>{
-    let data = async ()=>{
-      let response = await axios.get("https://jsonplaceholder.typicode.com/posts")
-      setUser(response.data);
-      }
-      data()
-      console.log(data);
+      getMyData()
     },[])
 
   return (
@@ -20,11 +27,11 @@ const Axios = () => {
     <div className="main">
     {user && user.length > 0
     ?
-    user.map((userId,index)=>(
+    user.slice(0,8).map((userId,index)=>(
       <div key={index} className='userId'>
         <h3>ID : {userId.id}</h3>
         <h4>Title : {userId.title}</h4>
-        <p>Body : {userId.body}</p>
+        <p>Body : {userId.body.slice(0, 70)}</p>
       </div>
     ))
     :
