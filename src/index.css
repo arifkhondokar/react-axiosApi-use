@@ -27,6 +27,13 @@
   gap: 20px;
   padding: 20px;
 }
+.mainWrapper {
+  background-color: #000000eb;
+  color: blanchedalmond;
+  padding: 10px;
+  width: 270px;
+  gap: 30px;
+}
 .userId{
   background-color: rgba(0, 0, 0, 0.563);
   color: blanchedalmond;

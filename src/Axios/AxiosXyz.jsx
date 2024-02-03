@@ -27,6 +27,7 @@ const AxiosXyz = () => {
                     <h2>idMeal : {item.idMeal}</h2>
                     <h3>Meal Name: {item.strMeal}</h3>
                     <p>Instructions: {item.strInstructions.slice(0, 100)}</p>
+                    <span>strYoutube: {item.strYoutube}</span>
                 </div>
             ))}
     </div>
