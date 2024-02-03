@@ -21,6 +21,12 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+.mainBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
 .userId{
   background-color: rgba(0, 0, 0, 0.563);
   color: blanchedalmond;
@@ -37,10 +43,6 @@ h4{
 }
 p{
   font-size: 25px;
-}
-img{
-  width: 300px;
-  height: 350px;
 }
 /* ---------------- */
 .mydata {
