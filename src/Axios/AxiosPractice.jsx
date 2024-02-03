@@ -21,7 +21,7 @@ const AxiosPractice = () => {
 
   return (
     <>
-    {console.log(myData)}
+    {/* {console.log(myData)} */}
     <div className='mainBox'>
         {
             myData.map((item, index)=> (
