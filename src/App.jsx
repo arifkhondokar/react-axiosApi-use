@@ -5,6 +5,7 @@ import AxiosTest from './Axios/AxiosTest'
 import AxiosPractice from './Axios/AxiosPractice'
 import AxiosXyz from './Axios/AxiosXyz'
 import FetchApi from './Fetch/FetchApi'
+import Featch from './Fetch/Featch'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <AxiosPractice/>
       <AxiosXyz/>
       <FetchApi/>
+      <Featch/>
     </>
   )
 }
